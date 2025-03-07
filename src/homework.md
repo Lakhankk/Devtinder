@@ -32,3 +32,5 @@
 - Diffrance between app.use and app.all
 - Write a dummy auth middleware for admin
 - Write a dummy auth middleware for user login all data
+- handle error using wild card entry aap.use("/", (err, req, res, next) ={});
+
