@@ -34,3 +34,13 @@
 - Write a dummy auth middleware for user login all data
 - handle error using wild card entry aap.use("/", (err, req, res, next) ={});
 
+- Create a free cluster on mongodb official website (Mongo Atlaas)
+- Install mangoose library.
+- Connect your application to the database "connection url/devTinder"
+- Call the connectDB function and connect database before staring application on 7777
+- Create a user schema and user model.
+-  create POST /signup API to data into databse
+- push some documents using API calls from postman
+- Error handling using try catch
+
+- 

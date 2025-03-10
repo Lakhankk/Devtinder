@@ -1,23 +1,23 @@
 const adminAuth = (req, res, next) => {
-    console.log("admin auth checked")
-    const token = "xyz";
-    const isAdminAuth = token === "xyz";
+    console.log("admin access checked");
+    const token = "1223";
+    const isAdminAuth = token === "123";
     if(!isAdminAuth){
-        res.status(401).send("Unathorised request")
+        res.status(401).send("something went wrong");
     }else{
         next()
     }
 };
 
-const userAuth = (req, res, next) =>{
-    console.log("User checked");
-    const token = "abc";
-    const isUserAuth = token === "abc";
+const userAuth = (req, res, next) => {
+    console.log("User checked")
+    const token = "1234";
+    const isUserAuth = token === "1234";
     if(!isUserAuth){
-        res.status(401).sent("Unthorised User");
+        res.status(200).send("Login Failed");
     }else{
         next()
     }
 };
 
-module.exports = {adminAuth, userAuth};
+module.exports = { adminAuth, userAuth };
