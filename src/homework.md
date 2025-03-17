@@ -46,4 +46,6 @@
 - diffrance between json obj and js obj
 - add the express.json middleware in your appliction
 - make your signup API dynamic to receive data from the end users
--
+- User.findone() with dublicate emailId, which object will return
+- API - get user by id
+- 
